@@ -24,8 +24,8 @@ class Application
     elsif req.path.match(/add/)
       search_term = req.params["item"]
       @@items.each do |item|
-        @@cart << search_term if item ==search_term
-        
+      @@cart << search_term if item ==search_term
+      end   
       else 
         resp.write "Item not found"
       end 
