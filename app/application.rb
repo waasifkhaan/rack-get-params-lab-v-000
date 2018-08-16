@@ -27,9 +27,9 @@ class Application
       @@items.each do |item|
         @@cart << search_term if item == search_term
       end   
-      else 
-        resp.write "Item not found"
-      end 
+      # else 
+      #   resp.write "Item not found"
+      # end 
     else
       resp.write "Path Not Found"
     end
