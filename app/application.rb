@@ -23,7 +23,7 @@ class Application
       resp.write handle_search(search_term)
     elsif req.path.match(/add/)
       search_term = req.params["item"]
-      if @@items.each do |item|
+      @@items.each do |item|
         @@cart << search_term if item ==search_term
         
       else 
